@@ -1,1 +1,3 @@
-# Integrated Analytics Laboratory
+# Data Mining @ ASAI-ER
+
+Matteo Francia, Ph.D.
