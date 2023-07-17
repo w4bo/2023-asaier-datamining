@@ -15,3 +15,8 @@ Teaching materials:
 - [Data pre-processing](https://w4bo.github.io/2023-asaier-datamining/01-DataPreprocessing.slides.html)
 - [Machine learning](https://w4bo.github.io/2023-asaier-datamining/02-MachineLearning.slides.html)
 - [Hackaton](???)
+
+
+## Software
+
+The lectures are based on Colab notebooks, you simply need a Google account (no additional software should be installed for Python and its ecosystem).
