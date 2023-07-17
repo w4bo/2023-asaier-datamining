@@ -2,6 +2,8 @@
 
 Matteo Francia, Ph.D.
 
+Link: https://github.com/w4bo/2023-bbs-datamining/
+
 ## Programme
 
 | When | What |
