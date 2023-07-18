@@ -2,10 +2,7 @@ name: "build"
 on: [push, pull_request]
 jobs:
   build:
-    runs-on: ubuntu-22.04
-    defaults:
-      run:
-        working-directory: materials
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -14,6 +11,7 @@ jobs:
           architecture: 'x64'
       - name: Run the notebooks
         run: |
+          cd materials
           pip install -r requirements.txt
           chmod +x generate.sh
           ./generate.sh
@@ -23,6 +21,7 @@ jobs:
           ls -las
       # - name: Build local Jupyter
       #   run: |
+      #     cd materials
       #     docker build -t jupyter .
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.3
