@@ -7,5 +7,5 @@ for FILE in *.ipynb; do
     filename="${filename%.*}"
     jupyter nbconvert --execute --to notebook --inplace "$FILE"
     jupyter nbconvert "$FILE" --to slides
-    sed -i 's+</head>+<link rel="stylesheet" href="./mytheme.css" id="theme"></head>+g' "$filename.slides.html"
+    # sed -i 's+</head>+<link rel="stylesheet" href="./mytheme.css" id="theme"></head>+g' "$filename.slides.html"
 done
