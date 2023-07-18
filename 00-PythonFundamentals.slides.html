@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>00-Introduction slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>00-PythonFundamentals slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7430,191 +7430,688 @@ div.jp-OutputPrompt {
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0abc0a55">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=eee6b966">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/w4bo/2023-asaier-datamining/blob/main/materials/00-Introduction.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
+<p><a href="https://colab.research.google.com/github/w4bo/handsOnDataPipelines/blob/main/materials/00-PythonFundamentals.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a4956fe0">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=196192da">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Data-Mining">Data Mining<a class="anchor-link" href="#Data-Mining">¶</a></h1><p>Matteo Francia, Ph.D. <a href="mailto:m.francia@unibo.it">(contact)</a></p>
+<p>Python was created by Guido van Rossum in the early 90s. It’s basically executable pseudocode.</p>
 <ul>
-<li>Assistant professor @ UniBO</li>
-<li>Teaching <em>Big Data and Cloud Platforms</em> and <em>Principles of Informatics</em></li>
-<li>Research topics: big data, spatio-temporal data, and precision agriculture</li>
+<li>Major versions of Python: 2 (end of support 2020) and 3</li>
+<li>We use 3, check also: <a href="https://learnxinyminutes.com/docs/python/">https://learnxinyminutes.com/docs/python/</a></li>
+</ul>
+<p>Cross-platform interpreted language</p>
+<ul>
+<li>Available on the main OS (Linux, Mac, Windows, etc.)</li>
+<li>CPython is the reference implementation plus other alternatives</li>
+<li>Can be integrated into other languages (C, C++, Java, etc.)</li>
+</ul>
+<p>Multi-paradigm</p>
+<ul>
+<li>Imperative, object-oriented</li>
+<li>Syntax can be easily extended</li>
+</ul>
+<p>Emphasis on the on ease of reading and writing</p>
+<ul>
+<li>"There should be one—and preferably only one—obvious way to do it"</li>
 </ul>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=79157e9a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="s2">"Hello, world!"</span>  <span class="c1"># This is a comment</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>'Hello, world!'</pre>
+</div>
+</div>
+</div>
+</div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ec4262ef">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=db17ec33">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>I am part of the Business Intelligence Group (<a href="https://big.csr.unibo.it/">https://big.csr.unibo.it/</a>)</p>
-<p>Thanks to E. Gallinucci, M. Golfarelli, S. Rizzi, J. Giovanelli, C. Forresi for the shared effort and materials</p>
-<p><img alt="image" src="https://github.com/w4bo/welaser/assets/18005592/c398fd10-7621-4867-adaf-59890eb26dd3"/></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=744480eb">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="image" src="https://github.com/w4bo/2023-asaier-datamining/assets/18005592/2661d54a-1860-4a11-bab7-7a20e395bf4b"/></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d0cb85fc">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Data mining</strong>: the interdisciplinary process of extracting and discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.</p>
+<p>Why Python?</p>
 <ul>
-<li>Aside from the raw analysis step, it also involves:<ol>
-<li>database and data management aspects,</li>
-<li>data pre-processing,</li>
-<li>model and inference considerations,</li>
-<li>interestingness metrics,</li>
-<li>complexity considerations,</li>
-<li>post-processing of discovered structures, and</li>
-<li>visualization.</li>
-</ol>
+<li>Easy to learn</li>
+<li>Used for multiple purposes (scripting, data science, etc.)</li>
+<li>Used for prototyping and rapid development cycles</li>
+<li>Rising popularity<ul>
+<li>Includes a standard library</li>
+<li>Wide availability of external libraries</li>
+<li>E.g., machine learning, deep learning</li>
+</ul>
 </li>
-<li>The term "data mining" is a misnomer: the goal is not the extraction (mining) of data itself</li>
 </ul>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=62749f16">
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=806d4568">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Why?</p>
-<p>The amount of data stored on computer is constantly increasing</p>
-<ul>
-<li>IoT data</li>
-<li>Social data</li>
-<li>Data on purchases / tax receipts</li>
-<li>Banking and credit card transactions</li>
-</ul>
-<p>Hardware becomes more powerful and cheaper each day</p>
-<p>Competitive pressure is constantly growing</p>
-<ul>
-<li>The information resource is a precious asset to overcoming competitors</li>
-</ul>
+<p><img alt="image" src="https://user-images.githubusercontent.com/18005592/200129836-6094deb1-e486-4b5e-88de-19a165513f90.png"/></p>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a3c2bd31">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6f561bb0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Why?</p>
+<p>Python features make it suitable for analysis operations</p>
 <ul>
-<li>Most of the information on the data is not directly apparent</li>
-<li>Humans can take weeks to find useful information</li>
-<li>Most of the data has never been analyzed</li>
+<li>Interactively usable, scripts, and complete programs</li>
 </ul>
-<p><img alt="image" src="https://github.com/w4bo/2023-asaier-datamining/assets/18005592/8fae400e-6c36-4f66-9b02-46f822b03626"/></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=eeced931">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Although strongly interrelated, <strong>machine learning</strong> is not equal to <strong>data mining</strong> which indicates the computational process of pattern discovery in large datasets using machine learning methods, artificial intelligence, statistics and databases.</p>
-<p>Apart from the actual analysis phase, data mining covers aspects of:</p>
+<p>Several libraries that make Python a complete data analysis environment</p>
 <ul>
-<li>Data management and pre-processing</li>
-<li>Modeling</li>
-<li>Identification of metrics of interest</li>
-<li>Visualization</li>
-</ul>
-<p><img alt="image" src="https://github.com/w4bo/welaser/assets/18005592/0dd9cc60-9741-414d-b856-3d2f6de83596"/></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=99cf0ace">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>A <strong>pattern</strong> is a synthetic representation rich in semantics of a set of data; usually expresses a recurring pattern in data, but can also express an exceptional pattern</p>
-<p>A pattern must be:</p>
-<ul>
-<li>Valid on data with a certain degree of confidence</li>
-<li>It can be understood from the syntax and semantic point of view, so that the user can interpret it</li>
-<li>Previously unknown and potentially useful, so that the user can take actions accordingly</li>
+<li>Python is increasingly used as a replacement for R and other ad-hoc software</li>
+<li>E.g., NumPy for the representation of data in the form of vectors and matrices</li>
+<li>E.g., Pandas for the manipulation and transformation of tabular data</li>
+<li>E.g., Sklearn for the application of machine learning and data mining algorithms</li>
+<li>E.g., Matplotlib for data visualization</li>
 </ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=21155500">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=68aab395">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Examples of pattern types:</p>
+<p>A Python statement is contained by default in a row</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=340d3239">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Python has a print function</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, world!"</span><span class="p">)</span>
+
+<span class="c1"># By default the print function also prints out a newline at the end.</span>
+<span class="c1"># Use the optional argument end to change the end string.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, World"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">"!"</span><span class="p">)</span>  <span class="c1"># =&gt; Hello, World!</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Hello, world!
+Hello, World!</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=70760aea">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Write inline instructions with <code>;</code></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7a07654e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"world!"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Hello, world!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e1a29118">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>A statement can continue in the next row
+Explicit: the row ends with “\”
+Implicit: if there are unclosed brackets</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=656dc8b9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, "</span>
+      <span class="o">+</span> <span class="s2">"world!"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Hello, world!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b8c2822a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Doing some math</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bd04823c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Math is what you would expect</span>
+<span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>   <span class="c1"># =&gt; 2</span>
+<span class="mi">8</span> <span class="o">-</span> <span class="mi">1</span>   <span class="c1"># =&gt; 7</span>
+<span class="mi">10</span> <span class="o">*</span> <span class="mi">2</span>  <span class="c1"># =&gt; 20</span>
+<span class="mi">35</span> <span class="o">/</span> <span class="mi">5</span>  <span class="c1"># =&gt; 7.0</span>
+<span class="c1"># Modulo operation</span>
+<span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span>   <span class="c1"># =&gt; 1</span>
+<span class="c1"># Exponentiation (x**y, x to the yth power)</span>
+<span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>  <span class="c1"># =&gt; 8</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>8</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b1dc7076">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Boolean variables</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f03fc55e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># negate with not</span>
+<span class="ow">not</span> <span class="kc">True</span>   <span class="c1"># =&gt; False</span>
+<span class="ow">not</span> <span class="kc">False</span>  <span class="c1"># =&gt; True</span>
+<span class="c1"># Boolean Operators</span>
+<span class="c1"># Note "and" and "or" are case-sensitive</span>
+<span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span>  <span class="c1"># =&gt; False</span>
+<span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span>   <span class="c1"># =&gt; True</span>
+
+<span class="c1"># True and False are actually 1 and 0 but with different keywords</span>
+<span class="kc">True</span> <span class="o">+</span> <span class="kc">True</span>  <span class="c1"># =&gt; 2</span>
+<span class="kc">True</span> <span class="o">*</span> <span class="mi">8</span>    <span class="c1"># =&gt; 8</span>
+<span class="kc">False</span> <span class="o">-</span> <span class="mi">5</span>   <span class="c1"># =&gt; -5</span>
+
+<span class="c1"># Equality is ==</span>
+<span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span>  <span class="c1"># =&gt; True</span>
+<span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span>  <span class="c1"># =&gt; False</span>
+
+<span class="c1"># Inequality is !=</span>
+<span class="mi">1</span> <span class="o">!=</span> <span class="mi">1</span>  <span class="c1"># =&gt; False</span>
+<span class="mi">2</span> <span class="o">!=</span> <span class="mi">1</span>  <span class="c1"># =&gt; True</span>
+
+<span class="c1"># More comparisons</span>
+<span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">10</span>  <span class="c1"># =&gt; True</span>
+<span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">10</span>  <span class="c1"># =&gt; False</span>
+<span class="mi">2</span> <span class="o">&lt;=</span> <span class="mi">2</span>  <span class="c1"># =&gt; True</span>
+<span class="mi">2</span> <span class="o">&gt;=</span> <span class="mi">2</span>  <span class="c1"># =&gt; True</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>True</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=30c6e0d1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In other languages, code blocks (<code>if</code>, <code>for</code>, etc.) are usually delimited by specific symbols (e.g., <code>{</code> and <code>}</code>)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fc0e3f87">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Java</p>
+<pre><code>for (int i = 0; i &lt; 5; i++) {
+    if (i &lt; 3) {
+        System.out.println(i + "");
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8176e4be">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In Python, indentation is used for better readability</p>
 <ul>
-<li><strong>Association rules</strong>: Let you determine the logical implications of the dataset, and then identify the groups of affinity between objects</li>
-<li><strong>Classifiers</strong>: Allow you to derive a model for classifying data according to a set of a priori assigned classes</li>
-<li><strong>Decision trees</strong>: are special type of classifiers that allow to identify, in order of importance, the causes that lead to an event occurring</li>
-<li><strong>Clustering</strong>: groups elements in a set, depending on their characteristics, of apriori unknow classes</li>
-<li><strong>Time series</strong>: they allow the detection of recurring or atypical patterns in complex data sequences</li>
+<li>Each row introducing a block (e.g., if) ends with “:”</li>
+<li>Rows within the same block are indented with the same number of spaces</li>
+<li>An empty block contains the keyword <code>pass</code></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=18b6742d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0
+1
+2
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=de516672">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Everything is an object: numbers, lists, functions, etc.</p>
+<ul>
+<li>Not the same as Java, where int and float are not objects</li>
+</ul>
+<p>Objects have attributes and methods accessed via the "." syntax</p>
+<ul>
+<li><code>object.attribute</code></li>
+<li><code>object.method()</code></li>
+</ul>
+<p>The object type determines the available attributes and operations</p>
+<ul>
+<li>Object types are known only at execution time</li>
+<li>Not the same as Java, where object types are known at compile time (i.e., before execution)</li>
+</ul>
+<p>The object <code>None</code> (with type <code>NoneType</code>) represents an absence of value</p>
+<ul>
+<li>As <code>null</code> in Java (which is not an object)</li>
 </ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=78e12f17">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6fe07fc0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Data Mining Bets</p>
+<p>Python introduces different object collections</p>
 <ul>
-<li>Scalability</li>
-<li>Multidimensionality of the data set</li>
-<li>Complexity and heterogeneity of the data</li>
-<li>Data quality</li>
-<li>Data Properties</li>
-<li>Privacy Keeping</li>
-<li>Processing in real-time</li>
+<li>Lists (<code>["cat", "cat", "dog"]</code>)</li>
+<li>Sets (<code>{"cat", "dog"}</code>)</li>
+<li>Dictionaries (<code>{"key": "value"}</code>)</li>
 </ul>
+<p>Collections</p>
+<ul>
+<li>Can contain objects with heterogeneous types (e.g., the list <code>[1, "cat"]</code>)</li>
+<li>Can be nested (e.g., <code>["cat", ["cat", ["dog"]]]</code>)</li>
+</ul>
+<p>Collections can be mutable or immutable</p>
+<ul>
+<li>Mutable: it is possible to add/remove/replaces elements</li>
+<li>Immutable: it is not possible to modify the collection (e.g., numbers, booleans, strings)</li>
+</ul>
+<p>Strings (str) are immutable sequences of characters</p>
+<ul>
+<li>A character is a string with length 1, there is not char type</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7729b400">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># There are no declarations, only assignments.</span>
+<span class="c1"># Convention is to use lower_case_with_underscores</span>
+<span class="n">some_var</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="c1"># Lists</span>
+<span class="n">li</span> <span class="o">=</span> <span class="p">[]</span>         <span class="c1"># empty list</span>
+<span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>    <span class="c1"># li is now [1]</span>
+<span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>    <span class="c1"># li is now [1, 2]</span>
+<span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>    <span class="c1"># li is now [1, 2, 4]</span>
+<span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>    <span class="c1"># li is now [1, 2, 4, 3]</span>
+<span class="n">li</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>           <span class="c1"># =&gt; 1</span>
+<span class="n">li</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>   <span class="c1"># Return list from index 1 to 3 =&gt; [2, 4]</span>
+<span class="c1"># Examine the length with "len()"</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>  <span class="c1"># =&gt; 4</span>
+
+<span class="c1"># You can start with a prefilled list</span>
+<span class="n">other_li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="c1"># Dictionaries store mappings from keys to values</span>
+<span class="n">empty_dict</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1"># Here is a prefilled dictionary</span>
+<span class="n">filled_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"one"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"two"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"three"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+
+<span class="c1"># Sets</span>
+<span class="n">empty_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="c1"># Initialize a set with a bunch of values. Yeah, it looks a bit like a dict. Sorry.</span>
+<span class="n">some_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>  <span class="c1"># some_set is now {1, 2, 3, 4}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=79a2d2a1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Control flow</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b7c44105">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Let's just make a variable</span>
+<span class="n">some_var</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="c1"># Here is an if statement. Indentation is significant in Python!</span>
+<span class="k">if</span> <span class="n">some_var</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"some_var is totally bigger than 10."</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">some_var</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>    <span class="c1"># This elif clause is optional.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"some_var is smaller than 10."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>                  <span class="c1"># This is optional too.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"some_var is indeed 10."</span><span class="p">)</span>
+
+
+<span class="sd">"""</span>
+<span class="sd">For loops iterate over lists</span>
+<span class="sd">prints:</span>
+<span class="sd">    dog is a mammal</span>
+<span class="sd">    cat is a mammal</span>
+<span class="sd">    mouse is a mammal</span>
+<span class="sd">"""</span>
+<span class="k">for</span> <span class="n">animal</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"dog"</span><span class="p">,</span> <span class="s2">"cat"</span><span class="p">,</span> <span class="s2">"mouse"</span><span class="p">]:</span>
+    <span class="c1"># You can use format() to interpolate formatted strings</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{}</span><span class="s2"> is a mammal."</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">animal</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>some_var is smaller than 10.
+dog is a mammal.
+cat is a mammal.
+mouse is a mammal.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=24b5efa2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Defining some functions</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5fd74100">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Use "def" to create new functions</span>
+<span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>  <span class="c1"># Return values with a return statement</span>
+
+
+<span class="c1"># Calling functions with parameters</span>
+<span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>  <span class="c1"># =&gt; prints out "x is 5 and y is 6" and returns 11</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>11</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dccedd8f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Importing some modules</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ae91d0e6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># You can import modules</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5eb748d6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Hands on!</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9814842c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># initialize a variable `foo` with value 10</span>
+
+<span class="c1"># initialize a variable `bar` with value 5</span>
+
+<span class="c1"># if `foo` is higher than `bar` then print "Higher", else print "Lower"</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
