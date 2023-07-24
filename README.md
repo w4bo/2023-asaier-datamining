@@ -13,10 +13,10 @@ Link: https://github.com/w4bo/2023-asaier-datamining/
 
 Teaching materials:
 
-- [Introduction](https://w4bo.github.io/2023-asaier-datamining/00-Introduction.slides.html)
-- [Data pre-processing](https://w4bo.github.io/2023-asaier-datamining/01-DataPreprocessing.slides.html)
-- [Machine learning](https://w4bo.github.io/2023-asaier-datamining/02-MachineLearning.slides.html)
-- [Hackaton](???)
+- Introduction
+- Data pre-processing
+- Machine learning
+- Hackaton
 
 
 ## Software
