@@ -17,6 +17,8 @@ Teaching materials:
 - Data pre-processing
 - Machine learning
 - Hackaton
+  - [IRIS (easy)](https://colab.research.google.com/github/w4bo/teaching-handsondatapipelines/blob/main/materials/14-Iris.ipynb)  
+  - [Diabetes (medium)](https://colab.research.google.com/github/w4bo/teaching-handsondatapipelines/blob/main/materials/16-Diabetes.ipynb)  
 
 
 ## Software
