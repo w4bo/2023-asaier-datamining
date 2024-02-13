@@ -1,7 +1,7 @@
 numpy==1.26.4
 pandas==1.5.3
 scikit-learn==1.4.0
-notebook==7.0.8
+notebook==7.1.0
 matplotlib==3.8.2
 seaborn==0.13.2
 rise==5.7.1
