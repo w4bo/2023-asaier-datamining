@@ -1,4 +1,4 @@
-FROM python:3.12-bullseye
+FROM python:3.13-bullseye
 RUN mkdir /materials
 COPY requirements.txt /materials
 WORKDIR /materials
